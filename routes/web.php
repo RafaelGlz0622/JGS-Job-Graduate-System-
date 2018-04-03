@@ -16,7 +16,7 @@ Route::get('prueba', function(){
 });
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Index');
 });
 
 Route::get('controlador','PruebaController@index');
