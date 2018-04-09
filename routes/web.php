@@ -15,10 +15,8 @@ Route::get('prueba', function(){
 	return "Hola mundo route.php";
 });
 
-Route::get('/', function () {
-    return view('Index');
-});
-
+Route::get('/', 'PagesController@index');
+Route::get('/Empresas', 'PagesController@EmpresasEmpleadorasView');
 Route::get('controlador','PruebaController@index');
 
 Route::resource('egresados','EgresadosController');
