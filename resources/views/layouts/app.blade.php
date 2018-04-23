@@ -2,137 +2,200 @@
 <html lang="{{ config('app.locale')}}">
 <head>
 	<title></title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	
-
-
-
-	<link rel="stylesheet" href="http://www.itmatamoros.edu.mx/wp-content/themes/tecnologico/css/estilos.v12.min.css" type="text/css" media="screen" />        
-
-	<!-- JS -->
-	<script type="text/javascript" src="http://www.itmatamoros.edu.mx/wp-content/themes/tecnologico/js/jquery-1.8.1.min.js"></script>   
-	<script type="text/javascript" src="http://www.itmatamoros.edu.mx/wp-content/themes/tecnologico/js/approot.js"></script>    
-	<!-- FIN DEL JS-->
-
-
-	<link rel='stylesheet' id='thepathcss-css'  href='http://www.itmatamoros.edu.mx/wp-content/plugins/thepath-tabbed-widget/thepath.css?ver=4.9.4' type='text/css' media='all' />
-	<link rel='stylesheet' id='awesome-weather-css'  href='http://www.itmatamoros.edu.mx/wp-content/plugins/awesome-weather/awesome-weather.css?ver=4.9.4' type='text/css' media='all' />
-
-	<link rel='stylesheet' id='opensans-googlefont-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300&#038;ver=4.9.4' type='text/css' media='all' />
-	<link rel='stylesheet' id='tab-me-styles-css'  href='http://www.itmatamoros.edu.mx/wp-content/plugins/tab-me/tab-me.css?ver=4.9.4' type='text/css' media='all' />
-	<link rel='stylesheet' id='tiempocom_style-css'  href='http://www.itmatamoros.edu.mx/wp-content/plugins/tiempocom/static/css/default.css?ver=4.9.4' type='text/css' media='all' />
-	<link rel='stylesheet' id='wpns-style-css'  href='http://www.itmatamoros.edu.mx/wp-content/plugins/wp-nivo-slider/nivo-slider.css?ver=4.9.4' type='text/css' media='all' />
-	<link rel='stylesheet' id='wpns-style-theme-css'  href='http://www.itmatamoros.edu.mx/wp-content/plugins/wp-nivo-slider/themes/light/light.css?ver=4.9.4' type='text/css' media='all' />
-	<link rel='stylesheet' id='wp-pagenavi-css'  href='http://www.itmatamoros.edu.mx/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
-	<link rel='stylesheet' id='tablepress-default-css'  href='http://www.itmatamoros.edu.mx/wp-content/plugins/tablepress/css/default.min.css?ver=1.7' type='text/css' media='all' />
-	<link rel='stylesheet' id='sharedaddy-css'  href='http://www.itmatamoros.edu.mx/wp-content/plugins/sharedaddy/sharing.css?ver=4.9.4' type='text/css' media='all' />
-	<link rel='stylesheet' id='wp-ui-css'  href='http://www.itmatamoros.edu.mx/wp-content/plugins/wp-ui/css/wp-ui.css?ver=4.9.4' type='text/css' media='all' />
-	<link rel='stylesheet' id='wpui-light-css'  href='http://www.itmatamoros.edu.mx/wp-content/plugins/wp-ui/css/themes/wpui-light.css?ver=4.9.4' type='text/css' media='all' />
-	<link rel='stylesheet' id='wpui-multiple-css'  href='http://www.itmatamoros.edu.mx/wp-content/plugins/wp-ui/css/css.php?styles=wpui-light%7Cwpui-blue%7Cwpui-red%7Cwpui-green%7Cwpui-dark%7Cwpui-quark%7Cwpui-alma%7Cwpui-macish%7Cwpui-redmond%7Cwpui-sevin&#038;ver=4.9.4' type='text/css' media='all' />
-
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-content/plugins/thepath-tabbed-widget/thepath.js?ver=4.9.4'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-content/plugins/thepath-tabbed-widget/jquery-ui.min-1.8.14.js?ver=4.9.4'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-content/plugins/wp-nivo-slider/jquery.nivo.slider.pack.js?ver=3.2'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-includes/js/jquery/ui/accordion.min.js?ver=1.11.4'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-includes/js/jquery/ui/sortable.min.js?ver=1.11.4'></script>
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/?wpui-script=before&#038;ver=4.9.4'></script>
-
-	<script type='text/javascript' src='http://www.itmatamoros.edu.mx/wp-content/plugins/wp-ui/js/wp-ui.js?ver=0.8.8'></script>
-	<link rel='https://api.w.org/' href='http://www.itmatamoros.edu.mx/index.php?rest_route=/' />
-	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.itmatamoros.edu.mx/xmlrpc.php?rsd" />
-	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.itmatamoros.edu.mx/wp-includes/wlwmanifest.xml" /> 
-	<meta name="generator" content="WordPress 4.9.4" />
-	<script type="text/javascript" src="http://www.itmatamoros.edu.mx/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.6"></script>
-
-	<style id='awesome-weather-inline-css' type='text/css'>
-	.awesome-weather-wrap { 
-		font-family: 'Open Sans', 
-		sans-serif;  
-		font-weight: 400;
-		font-size: 14px; 
-		line-height: 14px; 
-	}  </style>
-	
+	<script type="text/javascript" src="{{asset('/js/JQuery/jquery-3.3.1.min.js')}}"></script>
+	<script type="text/javascript" src="{{ asset('/js/Bootstrap/bootstrap.min.js')}}"></script>
 	<link rel="stylesheet" type="text/css" href="{{asset('/css/Bootstrap/bootstrap.min.css')}}">
-	<script type="text/javascript" src="{{asset('/js/Boostrap/booststrap.min.js')}}"></script>
+	<style type="text/css">
+	#banner {
+
+		width: 150vh
+
+	}
+	@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+	section .section-title {
+		text-align: center;
+		color: #007b5e;
+		margin-bottom: 50px;
+		text-transform: uppercase;
+	}
+	#footer {
+		background: #007b5e !important;
+	}
+	#footer h5{
+		padding-left: 10px;
+		border-left: 3px solid #eeeeee;
+		padding-bottom: 6px;
+		margin-bottom: 20px;
+		color:#ffffff;
+	}
+	#footer a {
+		color: #ffffff;
+		text-decoration: none !important;
+		background-color: transparent;
+		-webkit-text-decoration-skip: objects;
+	}
+	#footer ul.social li{
+		padding: 3px 0;
+	}
+	#footer ul.social li a i {
+		margin-right: 5px;
+		font-size:25px;
+		-webkit-transition: .5s all ease;
+		-moz-transition: .5s all ease;
+		transition: .5s all ease;
+	}
+	#footer ul.social li:hover a i {
+		font-size:30px;
+		margin-top:-10px;
+	}
+	#footer ul.social li a,
+	#footer ul.quick-links li a{
+		color:#ffffff;
+	}
+	#footer ul.social li a:hover{
+		color:#eeeeee;
+	}
+	#footer ul.quick-links li{
+		padding: 3px 0;
+		-webkit-transition: .5s all ease;
+		-moz-transition: .5s all ease;
+		transition: .5s all ease;
+	}
+	#footer ul.quick-links li:hover{
+		padding: 3px 0;
+		margin-left:5px;
+		font-weight:700;
+	}
+	#footer ul.quick-links li a i{
+		margin-right: 5px;
+	}
+	#footer ul.quick-links li:hover a i {
+		font-weight: 700;
+	}
+
+	@media (max-width:767px){
+		#footer h5 {
+			padding-left: 0;
+			border-left: transparent;
+			padding-bottom: 0px;
+			margin-bottom: 10px;
+		}
+	</style>
 
 
 </head>
+<header>
+	<section class="container-fluid slider d-flex justify-content-center align-items-center">
+		<img id="banner" src="/img/TecBanner.png" style="width: 30; height: 30;" class="img-fluid d-inline-block align-top mr-auto ml-auto">
+	</section>
 
-<body class="portada boxed">
-	<div id="wrapper" class="layout-978 clearfix">
-		<header id="site-header">
-			<div class="top">
-				<div id="barra_herramientas">
-					<div id="site-sec-nav" class="col3 m">
-						<ul>
-							<li><a href="http://www.itmatamoros.edu.mx/">Inicio</a></li>
-							<li><a href="http://www.tecnm.mx/informacion/institutos-tecnol&oacute;gicos-de-m&eacute;xico" target="black">Institutos Tecnol&oacute;gicos</a></li>
-							<li><a href="/">Contacto</a></li>
-							<li><a href="http://www.itmatamoros.edu.mx/wp-content/themes/tecnologico/Directorio.html" target="black">Directorio</a></li>
-						</ul>
-						<form action="http://www.itmatamoros.edu.mx/" method="get" class="search-form" id="search-form">
-							<input type="text" name="s" placeholder="Buscar" title="Ingresa tu b&uacute;squeda">
-							<button type="submit">Buscar</button>
-						</form>                    
-					</div>
-				</div>
-				<div id="nombre">
-					<a href="http://www.tecnm.mx/" target="blank">                          
-						<img  src="http://www.itmatamoros.edu.mx/wp-content/themes/tecnologico/encabezado_web.png"/>
+
+	<nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto ml-auto text-center">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
 					</a>
-				</div>
-			</div>
-			<nav id="site-nav">
-				<div id="nav-bar">
-					<ul>
-						<li class="selected "><a class="selected " href="/">Empleos para Egresados</a></li>						
-						<li><a href="#">Residencias / Practicas Profesionales</a>
-							<div class="submenu">
-								<ul>
-									<li><a href=" http://www.itmatamoros.edu.mx/?page_id=1721">Contador P&uacute;blico</a></li>
-									<li><a href="http://www.itmatamoros.edu.mx/?page_id=1731">Ing. Ambiental</a></li>
-									<li><a href="http://www.itmatamoros.edu.mx/?page_id=225">Ing. Civil</a></li>
-									<li><a href="http://www.itmatamoros.edu.mx/?page_id=228">Ing. Electromec&aacute;nica</a></li>
-									<li><a href="http://www.itmatamoros.edu.mx/?page_id=232">Ing. Electr&oacute;nica</a></li>
-									<li><a href="http://www.itmatamoros.edu.mx/?page_id=240">Ing. Sistemas Computacionales</a></li>
-									<li><a href="http://www.itmatamoros.edu.mx/?page_id=242">Ing. Gesti&oacute;n Empresarial</a></li>
-									<li><a href="http://www.itmatamoros.edu.mx/?page_id=234">Ing. Industrial</a></li>
-									<li><a href="http://www.itmatamoros.edu.mx/?page_id=236">Ing. Mecatr&oacute;nica</a></li>
-									<li><a href="http://www.itmatamoros.edu.mx/?page_id=238">Ing. Qu&iacute;Ã�Â­mica</a></li>
-									<li><a href="http://www.itmatamoros.edu.mx/?page_id=244">Lic. Administraci&oacute;n</a></li>
-									<li><a href="http://www.itmatamoros.edu.mx/?page_id=1793">Maestr&iacute;Ã�Â­a en Administraci&oacute;n Industrial</a></li>
-								</ul>
-							</div>
-						</li>
-						<li><a href="/Empresas">Empresas Empleadoras</a>
-							
-						</li>
-						
-						<li><a href="#">Iniciar Sesion</a></li>
-					</ul>
-				</div>
-				<!-- #nav-bar -->
-			</nav>
-			<!-- #site-nav -->
-		</header>
-
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
+					Dropdown
+				</a>
+			</form>
+		</div>
+	</nav>	
+</header>
+<body>
+	<div class="container">
 		@yield('content')
 	</div>
-	
 </body>
+<footer id="footertag">	
+	
+	<section id="footer" style="padding: 60px 0">
+		<div class="container">
+			<a href="http://www.sep.gob.mx/" target="blank" id="logo-footer" title="Instituto Tecnológico de Matamoros">
+				<img src="http://www.itmatamoros.edu.mx/wp-content/themes/tecnologico/img/logoSEP_hoz.png" style="" class="img-fluid mr-auto ml-auto display: block">
+			</a>
+			<br>
+			<br>
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+			</hr>
+		</div>	
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+				<p>National Transaction Corporation is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+				<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+			</div>			
+		</div>	
+		<hr>
+	</section>
+</footer>
+
 </html>
