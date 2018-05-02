@@ -15,8 +15,16 @@ Route::get('prueba', function(){
 	return "Hola mundo route.php";
 });
 
-Route::get('/', 'PagesController@index');
+Route::resource('/', 'PagesController');
+
+
 Route::get('/Empresas', 'PagesController@EmpresasEmpleadorasView');
-Route::get('controlador','PruebaController@index');
+
+
 
 Route::resource('egresados','EgresadosController');
+Route::resource('vacants' , 'VacantController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
