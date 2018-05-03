@@ -125,20 +125,31 @@
 				<li class="nav-item active">
 					<a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span></a>
 				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Carreras
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						
+						<a href="" class="dropdown-item">Contador Público</a>
+						<a href="" class="dropdown-item">Ing. Ambiental</a>
+						<a href="" class="dropdown-item">Ing. Civil</a>
+						<a href="" class="dropdown-item">Ing. Electromecánica</a>
+						<a href="" class="dropdown-item">Ing. Electrónica</a>
+						<a href="" class="dropdown-item">Ing. Sistemas Computacionales</a>
+						<a href="" class="dropdown-item">Ing. Gestión Empresarial</a>
+						<a href="" class="dropdown-item"> Ing. Industrial</a>
+						<a href="" class="dropdown-item">Ing. Mecatrónica</a>
+						<a href="" class="dropdown-item">Ing. Quí­mica</a>
+						<a href="" class="dropdown-item">Lic. Administración</a>
+						<a href="" class="dropdown-item" >Maestrí­a en Administración Industrial</a>
+						
+					</div>
+				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/Empresas">Empresas Participantes</a>
 				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Dropdown
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Something else here</a>
-					</div>
-				</li>				
+				
 				<li>
 					@guest
 					<li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>

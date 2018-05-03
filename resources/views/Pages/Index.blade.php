@@ -18,6 +18,7 @@
 	<div class="tab-content" id="nav-tabContent">
 		<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 			<div class="" data-tabid="tab1">
+				<br>
 				<h2>Vacantes disponibles</h2>
 				<br>
 				@if(count($vacants) > 0)
@@ -25,12 +26,15 @@
 				<div class="card">
 					<div class="card-body">
 						<h5><a href="/{{$_vacant->id}}">{{$_vacant->title}}</a></h5>
-						<small>Creado en {{$_vacant->addedDate}}</small>	
+						<small>Creado en {{$_vacant->addedDate}}</small>
+						<br>		
+						<small>{{$_vacant->salary}}</small>	
 					</div>						
 
 				</div>
 				<br>
 				@endforeach
+				{{$vacants->links()}}
 				@else
 				<p>No posts found</p>
 

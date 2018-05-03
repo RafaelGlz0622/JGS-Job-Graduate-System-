@@ -11,20 +11,13 @@
 |
 */
 
-Route::get('prueba', function(){
-	return "Hola mundo route.php";
-});
-
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/', 'PagesController');
-
-
-Route::get('/Empresas', 'PagesController@EmpresasEmpleadorasView');
-
-
+Route::get('/Empresas' , 'PagesController@EmpresasEmpleadorasView');
+Route::get('/{id}' , 'PagesController@show');
 
 Route::resource('egresados','EgresadosController');
 Route::resource('vacants' , 'VacantController');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');

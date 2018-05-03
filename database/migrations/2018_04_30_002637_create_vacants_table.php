@@ -19,12 +19,15 @@ class CreateVacantsTable extends Migration
             $table->string('body');
             $table->datetime('addedDate');
             $table->datetime('lastUpdate');
+
             $table->integer('tags_id')->unsigned()->nullable();
             $table->foreign('tags_id')->references('id')->on('tags');
             
             $table->timestamps();
         });
+        
     }
+
 
     /**
      * Reverse the migrations.
@@ -34,5 +37,9 @@ class CreateVacantsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('vacants');
+
+        Schema::table('vacants', function(Blueprint $table) {
+           $table->dropColumn('salary'); 
+       });
     }
 }

@@ -5,7 +5,7 @@
 .card {
   position: relative;
   z-index: 2;
-  background: #FFFFFF;
+  background: #;
   max-width: 1000px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -14,6 +14,7 @@
 }
 
 </style>
+<br>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -71,6 +72,7 @@
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     {{ __('Forgot Your Password?') }}
                                 </a>
+                                <a href="btn btn-link" href="Pages/MyAccount"> </a>
                             </div>
                         </div>
                     </form>
