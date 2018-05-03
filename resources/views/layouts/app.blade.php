@@ -149,7 +149,7 @@
 				<li class="nav-item">
 					<a class="nav-link" href="/Empresas">Empresas Participantes</a>
 				</li>
-				
+
 				<li>
 					@guest
 					<li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
@@ -161,82 +161,82 @@
 						</a>
 
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="{{ route('logout') }}"
-							onclick="event.preventDefault();
-							document.getElementById('logout-form').submit();">
-							{{ __('Logout') }}
-						</a>
+							<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> {{ __('Logout') }}
+							</a>
 
-						<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-							@csrf
-						</form>
-					</div>
-				</li>
-				@endguest
-			</li>
-		</ul>
-		
+							<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+								@csrf
+							</form>
+							<div/>
 
-	</div>
-</nav>	
-</header>
-<body>
-	<div class="container">
-		@yield('content')
-	</div>
-</body>
-<footer id="footertag">	
-	
-	<section id="footer" style="padding: 60px 0">
-		<div class="container">
-			<a href="http://www.sep.gob.mx/" target="blank" id="logo-footer" title="Instituto Tecnológico de Matamoros">
-				<img src="http://www.itmatamoros.edu.mx/wp-content/themes/tecnologico/img/logoSEP_hoz.png" style="" class="img-fluid mr-auto ml-auto display: block">
-			</a>
-			<br>
-			<br>
-			<div class="row text-center text-xs-center text-sm-left text-md-left">
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+					</li>
+
+						@endguest
 						
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-						
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-						
-					</ul>
-				</div>
+					</li>
+				</ul>
+
+
 			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12">
-					<ul class="list-unstyled list-inline social text-center">
-						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
-						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>						
-					</ul>
-				</div>
-			</hr>
-		</div>	
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 text-center text-white">
-				<p>National Transaction Corporation is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
-				<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
-			</div>			
-		</div>	
-		<hr>
-	</section>
-</footer>
+		</nav>	
+	</header>
+	<body>
+		<div class="container">
+			@yield('content')
+		</div>
+	</body>
+	<footer id="footertag">	
 
-</html>
+		<section id="footer" style="padding: 60px 0">
+			<div class="container">
+				<a href="http://www.sep.gob.mx/" target="blank" id="logo-footer" title="Instituto Tecnológico de Matamoros">
+					<img src="http://www.itmatamoros.edu.mx/wp-content/themes/tecnologico/img/logoSEP_hoz.png" style="" class="img-fluid mr-auto ml-auto display: block">
+				</a>
+				<br>
+				<br>
+				<div class="row text-center text-xs-center text-sm-left text-md-left">
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<h5>Quick links</h5>
+						<ul class="list-unstyled quick-links">
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<h5>Quick links</h5>
+						<ul class="list-unstyled quick-links">
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<h5>Quick links</h5>
+						<ul class="list-unstyled quick-links">
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+							<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<ul class="list-unstyled list-inline social text-center">
+							<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>						
+						</ul>
+					</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 text-center text-white">
+					<p>National Transaction Corporation is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+					<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+				</div>			
+			</div>	
+			<hr>
+		</section>
+	</footer>
+
+	</html>

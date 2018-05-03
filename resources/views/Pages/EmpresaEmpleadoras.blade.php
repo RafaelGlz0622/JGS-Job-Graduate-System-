@@ -37,7 +37,9 @@
 			</div>
 		</div>
 	</div>
-	
+</div>	
+<br>
+<div class="row">
 	<div class="col-md-6 col-sm-6 col-lg-4">
 		<div class="card" style="width: 18rem;">
 			<img src="{{ asset('img/Parker.jpg')}}" class="img-fluid">
@@ -65,9 +67,11 @@
 				<h5 class="card-title">Trico Componentes S.A. de C.V Matamoros</h5>
 			</div>
 		</div>
-	</div>
+	</div>	
+</div>
 
-</div>	
+
+
 
 
 @endsection
