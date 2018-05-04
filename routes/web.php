@@ -16,7 +16,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/', 'PagesController');
 Route::get('/Empresas' , 'PagesController@EmpresasEmpleadorasView');
 Route::get('/{id}' , 'PagesController@show');
-
+Route::resource('Pages/MyAccount', 'MyAccountController');
 Route::resource('egresados','EgresadosController');
 Route::resource('vacants' , 'VacantController');
 
