@@ -4,6 +4,7 @@ namespace Egresados\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Egresados\vacants;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
-    }
+       $vacants = vacants::paginate(5);
+       return view('Pages.Index')->with('vacants' , $vacants);
+
+   }
 }
